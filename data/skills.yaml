@@ -2,8 +2,8 @@ categories:
   - name: CAD & Drafting
     items: [Fusion 360, SolidWorks, Siemens NX, Creo, Engineering Drawings, GD&T]
   - name: Analysis
-    items: [ANSYS Mechanical, Abaqus, FEA, Thermal Analysis, MATLAB, Python]
+    items: [ANSYS Mechanical, Python]
   - name: Manufacturing
-    items: [Design for Manufacturing, Assembly Documentation, Manual Lathe, 3D Printing, Fabrication Support]
+    items: [Design for Manufacturing, Assembly Documentation, Manual Lathe, 3D Printing]
   - name: Engineering Practice
     items: [Technical Communication, Requirements Definition, Design Reviews, Root-Cause Analysis, Prototyping]
