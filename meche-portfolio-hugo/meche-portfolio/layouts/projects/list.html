@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="shell page-header section-pad">
+  <p class="eyebrow mono">PROJECT ARCHIVE</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+</section>
+<section class="shell section-pad no-top">
+  <div class="filter-bar" aria-label="Project filters">
+    <button class="filter active" data-filter="all">All</button>
+    {{ $tags := slice }}
+    {{ range .Pages }}{{ range .Params.tags }}{{ $tags = $tags | append . }}{{ end }}{{ end }}
+    {{ range sort (uniq $tags) }}<button class="filter" data-filter="{{ . | lower }}">{{ . }}</button>{{ end }}
+  </div>
+  <div class="project-grid archive-grid" id="project-grid">
+    {{ range .Pages.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}
