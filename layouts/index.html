@@ -1,19 +1,39 @@
 {{ define "main" }}
 <section class="hero shell section-pad">
   <div class="eyebrow mono">MECHANICAL ENGINEERING / PORTFOLIO</div>
-  <div class="hero-grid">
-    <div>
-      <h1>{{ site.Params.name }}</h1>
-      <p class="hero-role">{{ site.Params.role }}</p>
-    </div>
+  <div class="hero-grid hero-grid-with-portrait">
+  <div class="hero-intro">
+    <h1>{{ site.Params.name }}</h1>
+    <p class="hero-role">{{ site.Params.role }}</p>
+  </div>
+
+  <div class="hero-profile">
+    <figure class="portrait-frame">
+      <img
+        src="{{ "/images/portrait.jpg" | relURL }}"
+        alt="Portrait of {{ site.Params.name }}"
+        class="portrait-image"
+      >
+      <figcaption class="portrait-caption mono">
+        FIG. 01 / ENGINEERING PROFILE
+      </figcaption>
+    </figure>
+
     <div class="hero-copy">
       <p>{{ site.Params.bio }}</p>
+
       <div class="button-row">
-        <a class="button primary" href="{{ "/projects/" | relURL }}">View Projects</a>
-        <a class="button" href="{{ site.Params.resume | relURL }}">Resume</a>
+        <a class="button primary" href="{{ "/projects/" | relURL }}">
+          View Projects
+        </a>
+
+        <a class="button" href="{{ site.Params.resume | relURL }}">
+          Resume
+        </a>
       </div>
     </div>
   </div>
+</div>
   <div class="hero-meta mono">
     <span>LOCATION: {{ site.Params.location }}</span>
     <span>FOCUS: DESIGN · ANALYSIS · MANUFACTURING</span>
