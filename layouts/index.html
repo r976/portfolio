@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="hero shell section-pad">
+  <div class="eyebrow mono">MECHANICAL ENGINEERING / PORTFOLIO</div>
+  <div class="hero-grid">
+    <div>
+      <h1>{{ site.Params.name }}</h1>
+      <p class="hero-role">{{ site.Params.role }}</p>
+    </div>
+    <div class="hero-copy">
+      <p>{{ site.Params.bio }}</p>
+      <div class="button-row">
+        <a class="button primary" href="{{ "/projects/" | relURL }}">View Projects</a>
+        <a class="button" href="{{ site.Params.resume | relURL }}">Resume</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-meta mono">
+    <span>LOCATION: {{ site.Params.location }}</span>
+    <span>FOCUS: DESIGN · ANALYSIS · MANUFACTURING</span>
+  </div>
+</section>
+
+<section class="shell section-pad">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow mono">SELECTED WORK</p>
+      <h2>Featured Projects</h2>
+    </div>
+    <a class="text-link" href="{{ "/projects/" | relURL }}">All projects →</a>
+  </div>
+  <div class="project-grid">
+    {{ range first 3 (where (where site.RegularPages "Section" "projects") ".Params.featured" true) }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+<section class="shell section-pad capabilities">
+  <div>
+    <p class="eyebrow mono">CAPABILITIES</p>
+    <h2>Engineering across the full build cycle.</h2>
+  </div>
+  <div class="capability-grid">
+    <article><span class="index mono">01</span><h3>Design</h3><p>Parametric CAD, assemblies, drawings, tolerance-aware component design, and design-for-manufacturing.</p></article>
+    <article><span class="index mono">02</span><h3>Analysis</h3><p>Structural and thermal simulation, engineering calculations, design iteration, and validation planning.</p></article>
+    <article><span class="index mono">03</span><h3>Build</h3><p>Prototyping, fabrication support, assembly documentation, testing, and communication with technicians.</p></article>
+  </div>
+</section>
+{{ end }}

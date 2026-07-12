@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="shell contact-page section-pad">
+  <p class="eyebrow mono">CONTACT</p>
+  <h1>Let’s build something that works.</h1>
+  <p class="contact-intro">I’m interested in mechanical design, simulation, manufacturing, and test opportunities.</p>
+  <div class="contact-links">
+    <a href="mailto:{{ site.Params.email }}"><span class="mono">EMAIL</span><strong>{{ site.Params.email }}</strong><span>↗</span></a>
+    <a href="{{ site.Params.linkedin }}"><span class="mono">LINKEDIN</span><strong>Professional profile</strong><span>↗</span></a>
+    <a href="{{ site.Params.github }}"><span class="mono">GITHUB</span><strong>Code and technical work</strong><span>↗</span></a>
+    <a href="{{ site.Params.resume | relURL }}"><span class="mono">RESUME</span><strong>Download PDF</strong><span>↗</span></a>
+  </div>
+</section>
+{{ end }}
