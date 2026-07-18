@@ -1,6 +1,6 @@
-baseURL = "https://r976.github.io/portfolio/"
+baseURL = "https://ruhaanjain.me/"
 languageCode = "en-us"
-title = "Mechanical Engineering Portfolio"
+title = "Mechanical Engineering"
 enableRobotsTXT = true
 
 [params]
