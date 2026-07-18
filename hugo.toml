@@ -11,6 +11,7 @@ enableRobotsTXT = true
   bio = "Mechanical engineering student focused on design, simulation, manufacturing, and hands-on product development."
   github = "https://github.com/r976"
   linkedin = "https://www.linkedin.com/in/ruhaanjain/"
+  grabcad = "https://grabcad.com/ruhaan.jain-1"
   resume = "/files/resume.pdf"
 
 [menu]
