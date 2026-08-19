@@ -20,7 +20,7 @@ gallery:
     caption: "Rotor Structural FEA Simulation"
 
   - src: "/images/projects/fsae/rotor-fea-3.png"
-  caption: "Rotor Structural FEA Simulation"
+    caption: "Rotor Structural FEA Simulation"
 
 tags: ["Simulation", "FEA", "Automotive", "Creo", "ANSYS"]
 status: "Complete"
