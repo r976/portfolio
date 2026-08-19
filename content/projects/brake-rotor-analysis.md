@@ -7,17 +7,20 @@ weight: 3
 image: "/images/projects/fsae/rotor.jpg"
 
 gallery:
-  - src: "/images/projects/baja/cad.jpg"
+  - src: "/images/projects/fsae/rotor-cad.png"
     caption: "Rotor CAD geometry"
 
-  - src: "/images/projects/baja/fea.jpg"
-    caption: "Thermal stress simulation"
+  - src: "/images/projects/fsae/rotor-w-pads.png"
+    caption: "Rotor CAD geometry"
 
-  - src: "/images/projects/baja/prototype.jpg"
-    caption: "Manufactured rotor"
+  - src: "/images/projects/fsae/rotor-fea-1.png"
+    caption: "Rotor Structural FEA Simulation"
 
-  - src: "/images/projects/baja/test.jpg"
-    caption: "Vehicle testing"
+  - src: "/images/projects/fsae/rotor-fea-2.png"
+    caption: "Rotor Structural FEA Simulation"
+
+  - src: "/images/projects/fsae/rotor-fea-3.png"
+  caption: "Rotor Structural FEA Simulation"
 
 tags: ["Simulation", "FEA", "Automotive", "Creo", "ANSYS"]
 status: "Complete"
