@@ -1,46 +1,75 @@
 {{ define "main" }}
 <article class="shell project-detail section-pad">
   <a class="back-link mono" href="{{ "/projects/" | relURL }}">← PROJECT ARCHIVE</a>
+
   <header class="detail-header">
     <div>
       <p class="eyebrow mono">{{ delimit .Params.tags " / " }}</p>
       <h1>{{ .Title }}</h1>
       <p class="lede">{{ .Params.summary }}</p>
     </div>
+
     <dl class="spec-list mono">
-      <div><dt>YEAR</dt><dd>{{ .Date.Format "2006" }}</dd></div>
-      <div><dt>STATUS</dt><dd>{{ .Params.status }}</dd></div>
-      {{ with .Params.github }}<div><dt>CODE</dt><dd><a href="{{ . }}">GitHub ↗</a></dd></div>{{ end }}
-      {{ with .Params.image }}
-  <img
-    src="{{ . | relURL }}"
-    alt="{{ $.Title }}"
-    class="project-hero-image"
-  >
-{{ end }}
+      <div>
+        <dt>YEAR</dt>
+        <dd>{{ .Date.Format "2006" }}</dd>
+      </div>
 
-{{ with .Params.gallery }}
-<div class="project-gallery">
-  {{ range . }}
-    <figure class="project-gallery-item">
-      <a href="{{ .src | relURL }}" target="_blank">
-        <img
-          src="{{ .src | relURL }}"
-          alt="{{ .caption }}"
-          loading="lazy"
-        >
-      </a>
+      <div>
+        <dt>STATUS</dt>
+        <dd>{{ .Params.status }}</dd>
+      </div>
 
-      {{ with .caption }}
-        <figcaption>{{ . }}</figcaption>
+      {{ with .Params.github }}
+      <div>
+        <dt>CODE</dt>
+        <dd><a href="{{ . }}">GitHub ↗</a></dd>
+      </div>
       {{ end }}
-    </figure>
-  {{ end }}
-</div>
-{{ end }}
-      {{ with .Params.demo }}<div><dt>DEMO</dt><dd><a href="{{ . }}">Open ↗</a></dd></div>{{ end }}
+
+      {{ with .Params.demo }}
+      <div>
+        <dt>DEMO</dt>
+        <dd><a href="{{ . }}">Open ↗</a></dd>
+      </div>
+      {{ end }}
+
+      {{ with .Params.image }}
+      <div class="project-hero-wrap">
+        <img
+          src="{{ . | relURL }}"
+          alt="{{ $.Title }}"
+          class="project-hero-image"
+        >
+      </div>
+      {{ end }}
     </dl>
   </header>
-  <div class="prose">{{ .Content }}</div>
+
+  {{ with .Params.gallery }}
+  <section class="project-gallery-section">
+    <div class="project-gallery">
+      {{ range . }}
+      <figure class="project-gallery-item">
+        <a href="{{ .src | relURL }}" target="_blank">
+          <img
+            src="{{ .src | relURL }}"
+            alt="{{ .caption }}"
+            loading="lazy"
+          >
+        </a>
+
+        {{ with .caption }}
+        <figcaption>{{ . }}</figcaption>
+        {{ end }}
+      </figure>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}
