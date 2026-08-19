@@ -1,11 +1,11 @@
 baseURL = "https://ruhaanjain.me/"
 languageCode = "en-us"
-title = "Mechanical Engineering"
+title = "Ruhaan Jain - MechE @ UIUC"
 enableRobotsTXT = true
 
 [params]
   name = "Ruhaan Jain"
-  role = "Mechanical Engineering Intern @ Shank's Vet | Mechanical Engineering @ UIUC"
+  role = "Mechanical Engineering @ UIUC | Prev. Mechanical Engineering Intern @ Shank's Vet"
   location = "Naperville, IL"
   email = "ruhjain07@gmail.com"
   bio = "Mechanical engineering student focused on design, simulation, manufacturing, and hands-on product development."
