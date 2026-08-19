@@ -1,5 +1,5 @@
 ---
-title: "Baja SAE Brake Rotor Analysis"
+title: "Formula SAE Brake Rotor Analysis"
 date: 2025-11-01
 summary: "Used thermal and structural simulation to evaluate brake rotor materials, temperature response, and geometry for a student race vehicle."
 featured: true
