@@ -4,7 +4,25 @@ date: 2025-11-01
 summary: "Used thermal and structural simulation to evaluate brake rotor materials, temperature response, and geometry for a student race vehicle."
 featured: true
 weight: 3
-image: "/images/projects/baja/rotor.jpg"
+image: "/images/projects/fsae/rotor.jpg"
+
+[[gallery]]
+src = "/images/projects/baja/cad.jpg"
+caption = "Rotor CAD geometry"
+
+[[gallery]]
+src = "/images/projects/baja/fea.jpg"
+caption = "Thermal stress simulation"
+
+[[gallery]]
+src = "/images/projects/baja/prototype.jpg"
+caption = "Manufactured rotor"
+
+[[gallery]]
+src = "/images/projects/baja/test.jpg"
+caption = "Vehicle testing"
++++
+
 tags: ["Simulation", "FEA", "Automotive", "Creo", "ANSYS"]
 status: "Complete"
 ---
