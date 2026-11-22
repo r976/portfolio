@@ -5,7 +5,8 @@ summary: "Developed a computer-vision pipeline to segment boiling bubbles and es
 featured: false
 weight: 4
 tags: ["Research", "Python", "Simulation"]
-status: "Research"image: "/images/projects/bubbles/opencv-1.png"
+status: "Research"
+image: "/images/projects/bubbles/opencv-1.png"
 
 gallery:
   - src: "/images/projects/bubbles/opencv-1.png"
