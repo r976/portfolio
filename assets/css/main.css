@@ -531,27 +531,58 @@ h3 {
   margin: 0;
 }
 
-.project-gallery-item a {
-  display: block;
-}
+/* Consistent framed media box */
 
-.project-gallery-item img {
+.project-gallery-media {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
+  height: 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
   background: var(--panel-2);
-  display: block;
   border: 1px solid var(--line);
-  transition: transform .2s ease, border-color .2s ease;
 }
 
-.project-gallery-item img:hover {
-  transform: translateY(-2px);
+/* Make image links fill the media frame */
+
+.project-gallery-media > a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images and videos use identical sizing */
+
+.project-gallery-media img,
+.project-gallery-media video {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  background: var(--panel-2);
+}
+
+/* Subtle hover only for clickable images */
+
+.project-gallery-media > a:hover {
   border-color: var(--accent);
 }
 
+/* Caption */
+
 .project-gallery-item figcaption {
   margin-top: 8px;
+
   font-size: .75rem;
   color: var(--muted);
   font-family: "IBM Plex Mono", monospace;
