@@ -47,26 +47,54 @@
   </header>
 
   {{ with .Params.gallery }}
-  <section class="project-gallery-section">
-    <div class="project-gallery">
-      {{ range . }}
-      <figure class="project-gallery-item">
-        <a href="{{ .src | relURL }}" target="_blank">
-          <img
-            src="{{ .src | relURL }}"
-            alt="{{ .caption }}"
-            loading="lazy"
-          >
-        </a>
+<section class="project-gallery-section">
+  <div class="project-gallery">
 
-        {{ with .caption }}
-        <figcaption>{{ . }}</figcaption>
+    {{ range . }}
+
+    {{ $src := .src }}
+    {{ $ext := lower (path.Ext $src) }}
+
+    <figure class="project-gallery-item">
+
+      <div class="project-gallery-media">
+
+        {{ if or (eq $ext ".mp4") (eq $ext ".webm") (eq $ext ".mov") (eq $ext ".m4v") }}
+
+          <video
+            controls
+            preload="metadata"
+            playsinline
+          >
+            <source src="{{ $src | relURL }}">
+            Your browser does not support this video.
+          </video>
+
+        {{ else }}
+
+          <a href="{{ $src | relURL }}" target="_blank">
+            <img
+              src="{{ $src | relURL }}"
+              alt="{{ .caption }}"
+              loading="lazy"
+            >
+          </a>
+
         {{ end }}
-      </figure>
+
+      </div>
+
+      {{ with .caption }}
+      <figcaption>{{ . }}</figcaption>
       {{ end }}
-    </div>
-  </section>
-  {{ end }}
+
+    </figure>
+
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
 
   <div class="prose">
     {{ .Content }}
