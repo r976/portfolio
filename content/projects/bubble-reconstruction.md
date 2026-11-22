@@ -18,7 +18,7 @@ gallery:
   - src: "/images/projects/bubbles/cloud-3.png"
     caption: "Bubble Volume Reconstruction"
 
-  - src: "/images/projects/bubbles/pool-boil.mp4"
+  - src: "/images/projects/bubbles/poolboil.mp4"
     caption: "Pool Boiling Image Detection & Segmentation"
 
   - src: "/images/projects/bubbles/annotated_video-hole-tracking.mp4"
