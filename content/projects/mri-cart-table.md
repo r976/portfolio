@@ -1,6 +1,6 @@
 ---
 title: "MRI-Compatible Cart Table"
-date: 2026-06-01
+date: 2026-05-26
 summary: "Converted preliminary sketches into a complete parametric table assembly and supported adaptation for a hospital MRI system."
 featured: true
 weight: 1
@@ -8,6 +8,23 @@ tags: ["CAD", "Simulation", "Manufacturing"]
 status: "In Development"
 github: ""
 demo: ""
+image: "/images/projects/mri/table-mri-2.png"
+
+gallery:
+  - src: "/images/projects/mri/table-mri-1.png"
+    caption: "Modified Table & Extension interface w/ MRI"
+
+  - src: "/images/projects/mri/table-extension-1.png"
+    caption: "Modified Table w/ Extension Installed"
+
+  - src: "/images/projects/mri/mri-cart-1.png"
+    caption: "Unmodified MRI Table"
+
+  - src: "/images/projects/mri/extension-1.png"
+    caption: "Leg Extension"
+
+  - src: "/images/projects/mri/table-fea-1.png"
+    caption: "Unmodified Table FEA"
 ---
 
 ## Objective
