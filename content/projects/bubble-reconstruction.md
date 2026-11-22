@@ -21,7 +21,7 @@ gallery:
   - src: "/images/projects/bubbles/poolboil.mp4"
     caption: "Pool Boiling Image Detection & Segmentation"
 
-  - src: "/images/projects/bubbles/annotated_video-hole-tracking.mp4"
+  - src: "/images/projects/bubbles/holetracking.mp4"
     caption: "Image Detection w/ Hole Tracking"
 
 ---
