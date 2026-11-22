@@ -1,11 +1,28 @@
 ---
 title: "Boiling Bubble 3D Reconstruction"
-date: 2025-08-01
+date: 2025-08-09
 summary: "Developed a computer-vision pipeline to segment boiling bubbles and estimate three-dimensional geometry and volume from video."
 featured: false
 weight: 4
 tags: ["Research", "Python", "Simulation"]
-status: "Research"
+status: "Research"image: "/images/projects/bubbles/opencv-1.png"
+
+gallery:
+  - src: "/images/projects/bubbles/opencv-1.png"
+    caption: "Boundary Detection Using OpenCV"
+
+  - src: "/images/projects/bubbles/revolve-9.png"
+    caption: "Bubble Volume Reconstruction"
+
+  - src: "/images/projects/bubbles/cloud-3.png"
+    caption: "Bubble Volume Reconstruction"
+
+  - src: "/images/projects/bubbles/pool-boil.mp4"
+    caption: "Pool Boiling Image Detection & Segmentation"
+
+  - src: "/images/projects/bubbles/annotated_video-hole-tracking.mp4"
+    caption: "Image Detection w/ Hole Tracking"
+
 ---
 
 ## Objective
