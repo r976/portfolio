@@ -6,6 +6,17 @@ featured: true
 weight: 2
 tags: ["CAD", "Prototyping", "Robotics"]
 status: "Prototype"
+image: "/images/projects/sigrobotics/wall-robot.jpg"
+
+gallery:
+  - src: "/images/projects/sigrobotics/robot-v1-1.png"
+    caption: "V1 CAD"
+
+  - src: "/images/projects/sigrobotics/robot-v1-2.png"
+    caption: "V1 CAD"
+
+  - src: "/images/projects/sigrobotics/wall-robot-cad.png"
+    caption: "V2 CAD"
 ---
 
 ## Objective
